@@ -84,19 +84,29 @@ const Footer = () => {
           <span className="w-16 h-1 bg-red-600 inline-block absolute left-0 -bottom-[1.5px] z-10" />
         </h2>
         <Link href={"/"}>
-          <Image
-            src="https://i.ibb.co/ZW0SbjJ/logo-dark.png"
-            alt="Logo"
-            width={120}
-            height={100}
-            priority={true}
-            className="cursor-pointer w-40 h-auto"
-          />
-        </Link>
+          <div className="inline-flex items-center gap-3 bg-black px-6 py-4 rounded-md">
+          {/* Film reel icon */}
+          <svg 
+            viewBox="0 0 24 24" 
+            className="w-8 h-8"
+            fill="none"
+            stroke="white"
+            strokeWidth="1.5"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="12" cy="2" r="1.5" fill="white" />
+            <circle cx="12" cy="22" r="1.5" fill="white" />
+            <circle cx="2" cy="12" r="1.5" fill="white" />
+            <circle cx="22" cy="12" r="1.5" fill="white" />
+          </svg>
+          
+          {/* Text */}
+          <span className="text-white text-xl font-mono tracking-tight">movie-buddy</span>
+        </div>
+      </Link>
         <p className="text-gray-200 text-sm leading-6 tracking-wide mt-5 max-w-72">
-          Pellentesque suscipit pellentesque luctus. Nulla vel tellus nec risus
-          tempus feugiat. Donec nibh orci, sollicitudin sit amet gravida at,
-          varius sit amet sem.
+          Personal Project.JK15003
         </p>
       </div>
       <div>
@@ -120,12 +130,12 @@ const Footer = () => {
         </h2>
         <div className="text-gray-300 text-sm flex flex-col gap-2">
           <p>
-            Phone: <span className="text-white font-medium">001 7728 3369</span>
+            Phone: <span className="text-white font-medium">+961 76181551</span>
           </p>
           <p>
             Email:{" "}
             <span className="text-white font-medium">
-              noor.jsdivs@gmail.com
+              joseph.khoury321@gmail.com
             </span>
           </p>
         </div>
